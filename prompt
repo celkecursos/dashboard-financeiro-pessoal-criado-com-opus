@@ -1,0 +1,98 @@
+Crie um projeto completo chamado "dashboard-financeiro-pessoal" utilizando React com Vite e JavaScript puro. Não utilize TypeScript em nenhuma parte do projeto.
+
+O objetivo é desenvolver um Dashboard Financeiro Pessoal moderno, responsivo e visualmente agradável, utilizando dados mockados, sem backend e sem banco de dados.
+
+Requisitos:
+
+- Utilize React com Vite.
+- Utilize JavaScript (JSX). Não utilize TypeScript.
+- Utilize Tailwind CSS para toda a estilização.
+- Utilize Recharts para os gráficos.
+- Utilize LocalStorage para persistir os dados cadastrados pelo usuário.
+- Crie o projeto a partir de uma pasta vazia, executando os comandos necessários para instalação e configuração das dependências.
+
+Funcionalidades obrigatórias:
+
+1. Dashboard inicial contendo cards com:
+   - Saldo atual;
+   - Total de receitas;
+   - Total de despesas;
+   - Economia do mês.
+
+2. Lista de transações contendo:
+   - descrição;
+   - categoria;
+   - tipo (receita ou despesa);
+   - valor;
+   - data.
+
+3. Formulário para adicionar novas transações.
+
+4. Possibilidade de excluir transações.
+
+5. Filtro por categoria.
+
+6. Gráfico apresentando os gastos por categoria.
+
+7. Dados iniciais mockados para demonstração.
+
+8. Persistência utilizando LocalStorage:
+   - Na primeira execução carregar os dados mockados;
+   - Após alterações, salvar e recuperar os dados do LocalStorage.
+
+9. Implementar suporte a tema claro e tema escuro:
+   - Adicionar um botão ou alternador visível na interface para o usuário trocar entre os temas;
+   - Utilizar o recurso de dark mode do Tailwind CSS baseado em classe (`class`);
+   - Salvar a preferência do tema no LocalStorage;
+   - Recuperar automaticamente o tema salvo ao abrir novamente a aplicação;
+   - Caso não exista preferência salva, utilizar o tema claro como padrão;
+   - Garantir que todos os componentes da aplicação sejam compatíveis com os dois temas.
+
+Requisitos de interface:
+
+- Layout moderno e profissional;
+- Design responsivo para desktop e dispositivos móveis;
+- Utilize componentes reutilizáveis;
+- Organize o projeto em pastas seguindo boas práticas;
+- Utilize nomes de variáveis, funções e componentes em inglês;
+- Inclua comentários apenas quando realmente agregarem valor ao entendimento do código;
+- Evite complexidade desnecessária;
+- Crie uma experiência visual agradável tanto no tema claro quanto no tema escuro.
+
+Ao final:
+- Execute a aplicação para verificar se não existem erros;
+- Corrija automaticamente eventuais problemas encontrados;
+- Apresente a estrutura final das pastas do projeto;
+- Explique brevemente as principais decisões tomadas durante a implementação;
+- Valide manualmente o funcionamento do alternador de tema, garantindo que a preferência seja preservada após atualizar a página.
+
+
+
+
+
+
+Agora prepare o projeto para versionamento e envio ao GitHub.
+
+Execute os seguintes passos:
+
+1. Revise se existem arquivos temporários ou desnecessários para remover antes do commit.
+
+2. Verifique se o arquivo .gitignore está adequado para projetos React criados com Vite.
+
+3. Inicialize o repositório Git, caso ainda não exista.
+
+4. Adicione todos os arquivos ao controle de versão.
+
+5. Crie commits utilizando mensagens claras e profissionais seguindo o padrão Conventional Commits.
+
+6. Configure o repositório remoto:
+
+https://github.com/celkecursos/xxx
+
+7. Envie o projeto para a branch principal (main).
+
+8. Caso seja necessária autenticação, apenas informe o procedimento esperado e aguarde minha ação.
+
+9. Ao finalizar, apresente os comandos Git executados e confirme que o projeto foi enviado com sucesso para o GitHub.
+
+Não faça alterações funcionais no sistema nesta etapa, exceto ajustes necessários para o versionamento e publicação do projeto.
