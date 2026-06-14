@@ -3,18 +3,23 @@ export const TRANSACTION_TYPES = {
   EXPENSE: 'expense',
 }
 
-export const INCOME_CATEGORIES = ['Salary', 'Freelance', 'Investments', 'Other']
+export const INCOME_CATEGORIES = [
+  'Salário',
+  'Freelance',
+  'Investimentos',
+  'Outros',
+]
 
 export const EXPENSE_CATEGORIES = [
-  'Housing',
-  'Food',
-  'Transport',
-  'Health',
-  'Education',
-  'Leisure',
-  'Shopping',
-  'Bills',
-  'Other',
+  'Moradia',
+  'Alimentação',
+  'Transporte',
+  'Saúde',
+  'Educação',
+  'Lazer',
+  'Compras',
+  'Contas',
+  'Outros',
 ]
 
 export const ALL_CATEGORIES = [

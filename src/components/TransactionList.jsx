@@ -9,7 +9,7 @@ function CategoryFilter({ categories, value, onChange }) {
       onChange={(e) => onChange(e.target.value)}
       className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm text-slate-700 outline-none transition-colors focus:border-indigo-500 dark:border-slate-600 dark:bg-slate-900 dark:text-slate-200"
     >
-      <option value="all">All categories</option>
+      <option value="all">Todas as categorias</option>
       {categories.map((category) => (
         <option key={category} value={category}>
           {category}
@@ -48,7 +48,7 @@ function TransactionRow({ transaction, onDelete }) {
         <button
           type="button"
           onClick={() => onDelete(transaction.id)}
-          aria-label="Delete transaction"
+          aria-label="Excluir transação"
           className="flex h-8 w-8 items-center justify-center rounded-lg text-slate-400 transition-colors hover:bg-rose-50 hover:text-rose-600 dark:hover:bg-rose-500/10"
         >
           🗑️
@@ -69,7 +69,7 @@ export function TransactionList({
     <Card>
       <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
         <h2 className="text-lg font-semibold text-slate-900 dark:text-white">
-          Transactions
+          Transações
         </h2>
         <CategoryFilter
           categories={categories}
@@ -80,7 +80,7 @@ export function TransactionList({
 
       {transactions.length === 0 ? (
         <p className="py-8 text-center text-sm text-slate-500 dark:text-slate-400">
-          No transactions found.
+          Nenhuma transação encontrada.
         </p>
       ) : (
         <ul className="divide-y divide-slate-100 dark:divide-slate-700">

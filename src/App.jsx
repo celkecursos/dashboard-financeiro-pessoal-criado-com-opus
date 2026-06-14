@@ -92,7 +92,7 @@ function App() {
         </div>
 
         <footer className="pt-2 text-center text-xs text-slate-400 dark:text-slate-500">
-          Personal Finance Dashboard · Demo data persisted locally
+          Painel Financeiro Pessoal · Dados de demonstração salvos localmente
         </footer>
       </div>
     </div>

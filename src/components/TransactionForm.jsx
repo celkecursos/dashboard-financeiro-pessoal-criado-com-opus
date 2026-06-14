@@ -41,11 +41,11 @@ export function TransactionForm({ onAdd }) {
     event.preventDefault()
     const amount = Number(form.amount)
     if (!form.description.trim()) {
-      setError('Please enter a description.')
+      setError('Informe uma descrição.')
       return
     }
     if (!amount || amount <= 0) {
-      setError('Please enter an amount greater than zero.')
+      setError('Informe um valor maior que zero.')
       return
     }
     onAdd({
@@ -63,15 +63,15 @@ export function TransactionForm({ onAdd }) {
   return (
     <Card>
       <h2 className="mb-4 text-lg font-semibold text-slate-900 dark:text-white">
-        New transaction
+        Nova transação
       </h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label className={labelClasses}>Description</label>
+          <label className={labelClasses}>Descrição</label>
           <input
             type="text"
             className={inputClasses}
-            placeholder="e.g. Supermarket"
+            placeholder="ex.: Supermercado"
             value={form.description}
             onChange={(e) =>
               setForm((p) => ({ ...p, description: e.target.value }))
@@ -80,7 +80,7 @@ export function TransactionForm({ onAdd }) {
         </div>
 
         <div>
-          <label className={labelClasses}>Type</label>
+          <label className={labelClasses}>Tipo</label>
           <div className="grid grid-cols-2 gap-2">
             <button
               type="button"
@@ -91,7 +91,7 @@ export function TransactionForm({ onAdd }) {
                   : 'border-slate-300 text-slate-600 dark:border-slate-600 dark:text-slate-300'
               }`}
             >
-              Expense
+              Despesa
             </button>
             <button
               type="button"
@@ -102,14 +102,14 @@ export function TransactionForm({ onAdd }) {
                   : 'border-slate-300 text-slate-600 dark:border-slate-600 dark:text-slate-300'
               }`}
             >
-              Income
+              Receita
             </button>
           </div>
         </div>
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div>
-            <label className={labelClasses}>Category</label>
+            <label className={labelClasses}>Categoria</label>
             <select
               className={inputClasses}
               value={form.category}
@@ -125,7 +125,7 @@ export function TransactionForm({ onAdd }) {
             </select>
           </div>
           <div>
-            <label className={labelClasses}>Amount</label>
+            <label className={labelClasses}>Valor</label>
             <input
               type="number"
               min="0"
@@ -141,7 +141,7 @@ export function TransactionForm({ onAdd }) {
         </div>
 
         <div>
-          <label className={labelClasses}>Date</label>
+          <label className={labelClasses}>Data</label>
           <input
             type="date"
             className={inputClasses}
@@ -158,7 +158,7 @@ export function TransactionForm({ onAdd }) {
           type="submit"
           className="w-full rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-indigo-700"
         >
-          Add transaction
+          Adicionar transação
         </button>
       </form>
     </Card>

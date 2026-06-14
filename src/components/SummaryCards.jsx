@@ -21,25 +21,25 @@ export function SummaryCards({ balance, totalIncome, totalExpense, savings }) {
   return (
     <section className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
       <SummaryCard
-        label="Current balance"
+        label="Saldo atual"
         value={balance}
         icon="💰"
         accent="text-slate-900 dark:text-white"
       />
       <SummaryCard
-        label="Total income"
+        label="Total de receitas"
         value={totalIncome}
         icon="📈"
         accent="text-emerald-600 dark:text-emerald-400"
       />
       <SummaryCard
-        label="Total expenses"
+        label="Total de despesas"
         value={totalExpense}
         icon="📉"
         accent="text-rose-600 dark:text-rose-400"
       />
       <SummaryCard
-        label="Monthly savings"
+        label="Economia do mês"
         value={savings}
         icon="🏦"
         accent={

@@ -16,7 +16,7 @@ export function CategoryChart({ data }) {
   return (
     <Card>
       <h2 className="mb-4 text-lg font-semibold text-slate-900 dark:text-white">
-        Expenses by category
+        Despesas por categoria
       </h2>
       {hasData ? (
         <ResponsiveContainer width="100%" height={280}>
@@ -51,7 +51,7 @@ export function CategoryChart({ data }) {
         </ResponsiveContainer>
       ) : (
         <p className="py-16 text-center text-sm text-slate-500 dark:text-slate-400">
-          No expenses to display.
+          Nenhuma despesa para exibir.
         </p>
       )}
     </Card>
