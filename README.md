@@ -1,16 +1,104 @@
-# React + Vite
+# Painel Financeiro Pessoal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dashboard financeiro pessoal moderno e responsivo para acompanhar receitas,
+despesas e economias. Aplicação **front-end**, sem backend, com dados de
+demonstração persistidos no navegador via **LocalStorage**.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 📊 Cards de resumo: saldo atual, total de receitas, total de despesas e economia do mês
+- 📝 Cadastro de transações (descrição, categoria, tipo, valor e data)
+- 🗑️ Exclusão de transações
+- 🔎 Filtro por categoria
+- 🥧 Gráfico de despesas por categoria
+- 💾 Persistência automática no LocalStorage (carrega dados mockados na primeira execução)
+- 🌗 Tema claro/escuro com a preferência salva no navegador
+- 📱 Layout responsivo para desktop e dispositivos móveis
 
-## React Compiler
+## Tecnologias
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- [React](https://react.dev/) + [Vite](https://vite.dev/) (JavaScript / JSX)
+- [Tailwind CSS](https://tailwindcss.com/) (dark mode baseado em classe)
+- [Recharts](https://recharts.org/) para os gráficos
 
-## Expanding the ESLint configuration
+## Pré-requisitos
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [Node.js](https://nodejs.org/) 18 ou superior
+- npm (incluído no Node.js)
+
+## Instalação
+
+```bash
+# Clonar o repositório
+git clone https://github.com/celkecursos/dashboard-financeiro-pessoal-criado-com-opus.git
+cd dashboard-financeiro-pessoal-criado-com-opus
+
+# Instalar as dependências
+npm install
+```
+
+## Uso
+
+### Ambiente de desenvolvimento
+
+```bash
+npm run dev
+```
+
+Acesse o endereço exibido no terminal (por padrão `http://localhost:5173`).
+
+### Build de produção
+
+```bash
+npm run build
+```
+
+Os arquivos otimizados são gerados na pasta `dist/`.
+
+### Pré-visualizar o build
+
+```bash
+npm run preview
+```
+
+### Verificar o código (lint)
+
+```bash
+npm run lint
+```
+
+## Estrutura do projeto
+
+```
+src/
+├── components/        # Componentes de interface
+│   ├── ui/Card.jsx        # Card reutilizável
+│   ├── Header.jsx
+│   ├── ThemeToggle.jsx
+│   ├── SummaryCards.jsx
+│   ├── TransactionForm.jsx
+│   ├── TransactionList.jsx
+│   └── CategoryChart.jsx
+├── hooks/             # Hooks customizados
+│   ├── useLocalStorage.js
+│   └── useTheme.js
+├── data/             # Dados mockados
+│   └── mockTransactions.js
+├── constants/        # Categorias, tipos e cores
+│   └── categories.js
+├── utils/            # Funções utilitárias (moeda e data)
+│   └── format.js
+├── App.jsx           # Composição da aplicação e estado
+├── main.jsx          # Ponto de entrada
+└── index.css         # Estilos base do Tailwind
+```
+
+## Persistência dos dados
+
+Na primeira execução, a aplicação carrega um conjunto de transações de
+demonstração. A partir daí, qualquer alteração (adição ou exclusão de
+transações) e a preferência de tema são salvas automaticamente no
+LocalStorage do navegador e recuperadas ao reabrir a aplicação.
+
+> Para restaurar os dados de demonstração, limpe o LocalStorage do site no
+> seu navegador.
