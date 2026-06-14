@@ -1,0 +1,68 @@
+import { TRANSACTION_TYPES } from '../constants/categories'
+
+export const mockTransactions = [
+  {
+    id: '1',
+    description: 'Monthly salary',
+    category: 'Salary',
+    type: TRANSACTION_TYPES.INCOME,
+    amount: 5200,
+    date: '2026-06-05',
+  },
+  {
+    id: '2',
+    description: 'Apartment rent',
+    category: 'Housing',
+    type: TRANSACTION_TYPES.EXPENSE,
+    amount: 1500,
+    date: '2026-06-06',
+  },
+  {
+    id: '3',
+    description: 'Supermarket',
+    category: 'Food',
+    type: TRANSACTION_TYPES.EXPENSE,
+    amount: 640,
+    date: '2026-06-08',
+  },
+  {
+    id: '4',
+    description: 'Freelance project',
+    category: 'Freelance',
+    type: TRANSACTION_TYPES.INCOME,
+    amount: 1200,
+    date: '2026-06-10',
+  },
+  {
+    id: '5',
+    description: 'Fuel',
+    category: 'Transport',
+    type: TRANSACTION_TYPES.EXPENSE,
+    amount: 280,
+    date: '2026-06-11',
+  },
+  {
+    id: '6',
+    description: 'Gym membership',
+    category: 'Health',
+    type: TRANSACTION_TYPES.EXPENSE,
+    amount: 120,
+    date: '2026-06-12',
+  },
+  {
+    id: '7',
+    description: 'Streaming services',
+    category: 'Leisure',
+    type: TRANSACTION_TYPES.EXPENSE,
+    amount: 75,
+    date: '2026-06-12',
+  },
+  {
+    id: '8',
+    description: 'Electricity bill',
+    category: 'Bills',
+    type: TRANSACTION_TYPES.EXPENSE,
+    amount: 210,
+    date: '2026-06-13',
+  },
+]
