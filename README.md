@@ -15,6 +15,11 @@ demonstração persistidos no navegador via **LocalStorage**.
 - 🌗 Tema claro/escuro com a preferência salva no navegador
 - 📱 Layout responsivo para desktop e dispositivos móveis
 
+## Deploy do projeto na VPS da Hostinger
+
+- Ganhe 20% de desconto adicional na Hostinger:  https://celke.com.br/page/hostinger
+- Cupom para ganhar 10% de desconto na Hostinger — não cumulativo com o link acima: celke
+
 ## Tecnologias
 
 - [React](https://react.dev/) + [Vite](https://vite.dev/) (JavaScript / JSX)
@@ -102,3 +107,11 @@ LocalStorage do navegador e recuperadas ao reabrir a aplicação.
 
 > Para restaurar os dados de demonstração, limpe o LocalStorage do site no
 > seu navegador.
+
+## Autor
+
+Este projeto foi desenvolvido por [Cesar Szpak](https://github.com/cesarszpak) e está hospedado no repositório da organização [Celke](https://github.com/celkecursos).
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE.txt) para mais detalhes.
